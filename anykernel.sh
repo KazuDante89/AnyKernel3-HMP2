@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=[EAS]Simple-Kernel by KazuDante
+kernel.string=[HMP]Simple-Kernel by KazuDante
 do.devicecheck=1
 do.modules=0
 do.systemless=1
@@ -23,12 +23,6 @@ ramdisk_compression=auto;
 ## AnyKernel methods (DO NOT CHANGE)
 # import patching functions/variables - see for reference
 . tools/ak3-core.sh;
-
-# Extra
-ui_print " " " Installing EAS Magisk module"
-ui_print " " " Thanks to Uvera "
-rm -rf /data/adb/modules/barairo;
-cp -rf $home/magisk_module /data/adb/modules/barairo;
 
 ## AnyKernel install
 split_boot;
